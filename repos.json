@@ -8,22 +8,22 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9",
-        "branch": "main",
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9",
+        "branch": "android11-release",
         "name": "gcc"
       },
       {
-        "repo": "https://android.googlesource.com/platform/prebuilts/clang/linux-x86/host/3.6",
-        "branch": "main",
+        "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
+        "branch": "android11-release",
         "name": "clang"
       }
     ],
     "params": {
       "ARCH": "arm",
-      "CROSS_COMPILE": "aarch64-linux-gnu-",
+      "CROSS_COMPILE": "arm-linux-gnueabi-",
       "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
       "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
-      "CLANG_TRIPLE": "aarch64-linux-gnu-",
+      "CLANG_TRIPLE": "arm-linux-gnueabihf-",
     }
   }
 ]
