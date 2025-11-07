@@ -24,6 +24,8 @@
       "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
       "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
       "CLANG_TRIPLE": "arm-linux-gnueabihf-",
+      "AR": "",
+      "CC": "clang"
     }
   }
 ]
