@@ -1,9 +1,9 @@
 [  {
     "kernelSource": {
       "name": "test-Kernel",
-      "repo": "https://github.com/physwizz/a022f-u2",
-      "branch": "main",
-      "device": "a02"
+      "repo": "https://github.com/AgentFabulous/begonia",
+      "branch": "android-11.0",
+      "device": "begonia"
     },
     "withKernelSU": false,
     "toolchains": [
