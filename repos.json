@@ -8,13 +8,13 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://github.com/physwizz/a022f-u2/tree/main/toolchain/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9-lineage-19.1",
-        "branch": "",
-        "name": "gcc"
+        "repo": "https://android.googlesource.com/platform/prebuilts/gas/linux-x86",
+        "branch": "master",
+        "name": "gas"
       },
       {
-        "repo": "https://github.com/a02-trial/a022f_kernel/tree/main/toolchain/clang/host/linux-x86/clang-r383902",
-        "branch": "",
+        "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
+        "branch": "11",
         "name": "clang"
       }
     ],
