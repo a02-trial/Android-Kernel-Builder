@@ -1,14 +1,14 @@
 [  {
     "kernelSource": {
-      "name": "miku-KernelSU",
-      "repo": "https://github.com/a02-trial/a022f_kernel",
+      "name": "test-Kernel",
+      "repo": "https://github.com/physwizz/a022f-u2",
       "branch": "main",
       "device": "a02"
     },
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://github.com/a02-trial/a022f_kernel/tree/main/toolchain/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9-lineage-19.1",
+        "repo": "https://github.com/physwizz/a022f-u2/tree/main/toolchain/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9-lineage-19.1",
         "branch": "",
         "name": "gcc"
       },
