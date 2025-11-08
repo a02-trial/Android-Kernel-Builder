@@ -1,9 +1,9 @@
 [  {
     "kernelSource": {
       "name": "test-Kernel",
-      "repo": "https://github.com/AgentFabulous/begonia",
-      "branch": "android-11.0",
-      "device": "begonia"
+      "repo": "https://github.com/PhamtomK12/kernel_xiaomi_odin",
+      "branch": "TDA",
+      "device": "odin"
     },
     "withKernelSU": false,
     "toolchains": [
