@@ -1,9 +1,9 @@
 [  {
     "kernelSource": {
       "name": "test-Kernel",
-      "repo": "https://github.com/PhamtomK12/kernel_xiaomi_odin",
-      "branch": "TDA",
-      "device": "odin"
+      "repo": "https://github.com/a02-trial/platform_manifest_twrp_aosp",
+      "branch": "tw11",
+      "device": "a02"
     },
     "withKernelSU": false,
     "toolchains": [
