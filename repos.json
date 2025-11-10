@@ -5,24 +5,16 @@
       "branch": "tw11",
       "device": "a02"
     },
-    "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://android.googlesource.com/platform/prebuilts/gas/linux-x86",
-        "branch": "master",
-        "name": "gas"
-      },
-      {
         "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
-        "branch": "11",
+        "branch": "18",
         "name": "clang"
       }
     ],
     "params": {
       "ARCH": "arm",
-      "CROSS_COMPILE": "arm-linux-gnueabi-",
-      "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
-      "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
+      "CROSS_COMPILE": "arm-linux-androidkernel-",
       "CLANG_TRIPLE": "arm-linux-gnueabihf-",
       "AR": "",
       "CC": "clang"
