@@ -1,22 +1,21 @@
 [  {
     "kernelSource": {
       "name": "test-Kernel",
-      "repo": "https://github.com/a02-trial/platform_manifest_twrp_aosp",
-      "branch": "tw11",
+      "repo": "https://github.com/a02-trial/a022f_kernel",
+      "branch": "kernel11",
       "device": "a02"
     },
     "toolchains": [
       {
         "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
-        "branch": "18",
+        "branch": "11",
         "name": "clang"
       }
     ],
     "params": {
       "ARCH": "arm",
-      "CROSS_COMPILE": "arm-linux-androidkernel-",
-      "CLANG_TRIPLE": "arm-linux-gnueabihf-",
-      "AR": "",
+      "CROSS_COMPILE": "arm-linux-androideabi-",
+      "CLANG_TRIPLE": "arm-linux-androideabi-",
       "CC": "clang"
     }
   }
