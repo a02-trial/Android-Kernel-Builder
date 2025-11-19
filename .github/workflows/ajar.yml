@@ -1,4 +1,4 @@
-name: "Build kernels"
+name: "Nyoba2"
 
 env:
   CONFIGURATION: "repos.json"
@@ -44,6 +44,10 @@ jobs:
 
       DEFCONFIG_NAME: ${{ matrix.repos.kernelSource.device }}_defconfig
 
+    steps:
+      - name: "✨ Create working dir"
+        run: mkdir -p $kernelDir
+
       - name: "⭐ Install prerequisites"
         run: |
           sudo apt-get update
@@ -82,6 +86,11 @@ jobs:
           echo "PATH Variable: $PATH"
           ARCH=$(echo $params | jq -r ".ARCH")
           CROSS_COMPILE=$(echo $params | jq -r ".CROSS_COMPILE")
+          CROSS_COMPILE_COMPAT=$(echo $params | jq -r ".CROSS_COMPILE_COMPAT")
+          CROSS_COMPILE_ARM32=$(echo $params | jq -r ".CROSS_COMPILE_ARM32")
+          CLANG_TRIPLE=$(echo $params | jq -r ".CLANG_TRIPLE")
+          AR=$(echo $params | jq -r ".AR")
+          CC=$(echo $params | jq -r ".CC")
 
           echo "ARCH=$ARCH" >> $GITHUB_ENV
 
